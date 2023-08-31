@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, crimson, royalblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 50vh;
+  width: 40vw;
+  background-color: rgb(246, 232, 213);
+  display: flex;
+  /* border: 1px solid black; */
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.image {
+  width: 50%;
+}
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+
+.coffeemug{
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+.realprice{
+font-size: x-large;
+}
+.deletedprice{
+font-size: medium;
+}
+.button{
+    border-radius: 1em;
+   
+}
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjust container width and flex-direction for smaller screens */
+    .container {
+      flex-direction: column;
+      width: 90vw;
+    }
+  
+    .image {
+      width: 100%;
+      order: 2; /* Reorder the image below content on smaller screens */
+    }
+  
+    .content {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+  
+  
+  
+  
+  
+  
